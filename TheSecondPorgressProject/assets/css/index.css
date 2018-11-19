@@ -16,8 +16,8 @@ a:hover{
     color:blue;
 }
 html{
-  /*  font-size: 16.67vw;*/
-    font-size:14vw;
+    font-size: 16.67vw;
+   /* font-size:14vw;*/
 }
 
 .topWrap{
@@ -259,9 +259,11 @@ hr{
 }
 .place-content >li>ul>li:hover{
     background:#ff4411;
+    color:#fff
 }
-.beijing{
+.place-content .beijing{
     background:#ff4411;
+    color:#fff;
 }
 .place-content >li>ul>li:nth-of-type(1):hover{
     background:#FFF;
@@ -277,7 +279,7 @@ hr{
     height:0.14rem;
     vertical-align: center;
     padding-right:0.05rem;
-    color:#ddd;
+    color:#666;
 
 }
 .myEPet{
@@ -432,7 +434,7 @@ hr{
     color:red;
 }
 .navWrap{
-    padding-top:0.1rem;
+    padding-top:0.05rem;
     background:blue;
 }
 .nav{
@@ -540,17 +542,19 @@ hr{
 }
 .nav .asideRight{
 
-    position: absolute;
-
+   /* position: absolute;*/
+    background: #ff3399;
     height:3.58rem;
     display: none;
+    top:0;
+    left:0;
 }
 .nav .asideRight dl dd{
     height:1.19rem;
 }
 .nav .asideRight dl dd:nth-of-type(1) a span{
     background:url("../img/new_petcate.png");
-    display: inline-block;
+
     width: 0.60rem;
     height: 0.6rem;
     margin-top: 0.27rem;
@@ -680,7 +684,7 @@ color:red;
 .nav .category{
     height:3.58rem;
     position: relative;
-    display: block;
+    display: inline-block;
     z-index:2000;
     background:orange;
 }
@@ -717,9 +721,36 @@ color:red;
     overflow: hidden;
     height: 0.5rem;
 }
+.nav .category ul li h3 a:nth-of-type(2){
+    margin-left:0.15rem;
+}
 .nav .category ul li h3 i{
     display: inline-block;
     color: #999;
     width: 0.4rem;
     margin-left: 0.04rem;
+}
+.nav .category p{
+    height: 0.52rem;
+    line-height: 0.52rem;
+    background: #fff;
+    color: #22990d;
+    text-indent: 0.2rem;
+    font-size: 0.14rem;
+    background: #fff;
+    color: #e74085;
+}
+.nav .category p img{
+    vertical-align: middle;
+    margin-top: -0.03rem;
+    margin-right: 0.05rem;
+    border:0;
+}
+.nav .category p i{
+    height: 0.24rem;
+    padding: 0 0.09rem;
+    border-radius: 0.08rem;
+    background: #fb6003;
+    color: #fff;
+    margin-left: 0.1rem;
 }
