@@ -19,6 +19,10 @@ html{
     font-size: 16.67vw;
    /* font-size:14vw;*/
 }
+body{
+    overflow: auto;
+
+}
 
 .topWrap{
     height: 0.28rem;
@@ -294,6 +298,8 @@ hr{
     -moz-box-shadow:  0.03rem 0.01rem 0.05rem #666;
     box-shadow: 0.03rem 0.01rem 0.05rem #666;
     display: none;
+    z-index: 1002;
+    background: #fff;
 }
 .myEPet li{
     list-style-type: disc;
@@ -315,6 +321,8 @@ hr{
     -moz-box-shadow:  0.03rem 0.01rem 0.05rem #666;
     box-shadow: 0.03rem 0.01rem 0.05rem #666;
     display: none;
+    z-index: 1002;
+    background:#fff;
 }
 .myBookMark li{
     list-style-type: disc;
@@ -538,7 +546,7 @@ hr{
     left: 0;
     border-top: 0.02rem solid #FFF;
     background:red;
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 .nav .asideRight{
 
@@ -686,20 +694,25 @@ color:red;
     position: relative;
     display: inline-block;
     z-index:2000;
-    background:orange;
+    background:dodgerblue;
 }
-.nav .category ul{
-    overflow: hidden;
+.nav .category>ul{
+  /*  overflow: hidden;*/
 
 
 }
-.nav .category ul li{
-    height:0.51rem;
-    width:100%;
+.nav .category>ul>li{
+    background:rebeccapurple;
+    height:0.5rem ;
+    width:2.28rem;
     background:url("../img/menuLine1.png") 50% bottom no-repeat;
     display:block;
-    float: left;
-    text-align: -webkit-match-parent;
+    /*float: left;*/
+   /* text-align: -webkit-match-parent;*/
+   /* position:relative;
+    top:0;
+    left:0;*/
+   /* overflow: hidden;*/
 }
 .nav .category ul li h3{
     height:0.5rem;
@@ -711,8 +724,7 @@ color:red;
     background-color: #fcfcfc;
     background-image: url(../img/bg2.png);
     display: block;
-    font-size: 1.17em;
-
+    overflow: hidden;
 }
 .nav .category ul li h3 a{
     font-size: 0.14rem;
@@ -739,6 +751,7 @@ color:red;
     font-size: 0.14rem;
     background: #fff;
     color: #e74085;
+    display: inline-block;
 }
 .nav .category p img{
     vertical-align: middle;
@@ -750,7 +763,10 @@ color:red;
     height: 0.24rem;
     padding: 0 0.09rem;
     border-radius: 0.08rem;
-    background: #fb6003;
+    background: red;
     color: #fff;
     margin-left: 0.1rem;
+}
+.nav .category ul li:hover{
+    class:hover;
 }
