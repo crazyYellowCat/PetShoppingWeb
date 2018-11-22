@@ -434,6 +434,7 @@ function asideHoverHandler(e) {
     }
 
 }
+//轮播图
 var carouselImgs=["assets/img/pic_95.jpg","assets/img/pic_120.jpg","assets/img/pic_175.jpg","assets/img/pic_316.jpg",]
 var carousel=new Carousel($(".nav")[0],carouselImgs,["assets/img/left.png","assets/img/right.png"]);
 animation();
@@ -441,3 +442,72 @@ function animation() {
     requestAnimationFrame(animation)
     carousel.update();
 }
+//内容切换
+
+var dataArr=[
+    {pic:"assets/img/pic_329.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_164.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_44.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_293.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_12.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_276.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_69.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32},
+    {pic:"assets/img/pic_152.jpg",des:"皇家royal canin H33功能型 美毛成猫粮 2kg",usedPrice:55,currentPrice:32}
+]
+    var selArr=$(".content2 .selector ul li")
+console.log(selArr)
+        for(var i=0;i<selArr.length;i++){
+            selArr[i].setAttribute("index",i);
+            console.log($("selArr[i]"))
+            $(selArr[i]).on("mouseenter",selectorMouseenterHandler)
+        }
+        var preSelector=null;
+        function selectorMouseenterHandler(e) {
+            if(preSelector){
+                preSelector.remove()
+            }
+            $(".content2 .page4").css("display","none")
+          var pageContentWrap=  $("<ul class='clearfix'></ul>").appendTo($(".page1"));
+            for(var i=0;i<8;i++){
+               var pageConentItem= $("<li></li>").css({
+                    borderBottom: "0.01rem solid #e7e7e7",
+                    borderRight: "0.01rem solid #e7e7e7",
+                    width: "1.97rem",
+                    padding:"0.1rem",
+                    height: "2.17rem",
+                    float: "left"
+                }).appendTo(pageContentWrap)
+              var itemWrap= $("<a></a>").css({
+                    width:" 2rem",
+                textAlign: "center",
+                marginBottom: "0.15rem"
+                }).appendTo(pageConentItem);
+              var picWrap= $("<div></div>").css({
+                   width: "2rem",
+                textAlign: "center",
+                marginBottom: "0.15rem"
+               }).appendTo(itemWrap);
+                $("<img></img>").css({
+                    width: "1.36rem",
+                height:" 1.36rem",
+                marginTop: "0.05rem",
+                transition:" all .5s ease",
+                border: "1px solid #fff"
+                }).attr("src",dataArr[i].pic).appendTo(picWrap);
+                $("<h1></h1>").css({
+                    height:"0.32rem",
+                overflow: "hidden",
+                color:"#666",
+                fontWeight: "400"
+                }).text(dataArr[i].des).appendTo(itemWrap);
+                $("<div></div>").css({
+                    color:"red",
+                fontSize: "0.16rem",
+                marginTop:"0.05rem",
+                }).text(dataArr[i].currentPrice).appendTo(itemWrap);
+
+            }
+
+            preSelector=pageContentWrap;
+
+        }

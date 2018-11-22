@@ -24,6 +24,7 @@ body{
 
 }
 
+
 .topWrap{
     height: 0.28rem;
     border-bottom: 1px solid #ddd;
@@ -403,27 +404,27 @@ hr{
     font-size:0;
 
 }
-.keyWord lable{
+.headerMain.keyWord lable{
     float:left;
 }
-.keyWord{
+.headerMain.keyWord{
     margin: 0.1rem 0;
     width: 4.98rem;
     height: 0.17rem;
     overflow: hidden;
 }
-.keyWord a{
+.headerMain.keyWord a{
     display: inline-block;
     float: left;
     color: #999;
 }
-.keyWord a:hover{
+.headerMain.keyWord a:hover{
     color:blue;
 }
-.keyWord a:first-of-type{
+.headerMain.keyWord a:first-of-type{
     color:red;
 }
-.keyWord a span{
+.headerMain.keyWord a span{
     color: #999;
     margin: 0 0.1rem;
 }
@@ -795,9 +796,11 @@ background:#fff;
     width:2rem;
     transition: all 1s;
 }
-.content1Wrap{
+.content{
     margin:0 auto;
     width:12rem;
+}
+.content1Wrap{
 
 }
 .content1 {
@@ -846,6 +849,7 @@ background:#fff;
     text-overflow: ellipsis;
     margin-top:1.7rem;
     margin-left:0.25rem;
+    color:#fff;
 }
 .content1 .leftPic .comment p{
     display: inline-block;
@@ -856,10 +860,1925 @@ background:#fff;
     overflow: hidden;
     border-radius: 50%;
     margin-right: 0.05rem;
+
 }
 .content1 .leftPic .comment p img{
     vertical-align: top;
     border: 0;
     max-width: 100%;
     height: auto;
+}
+.content1 .rightBox .timesWrap{
+
+    position:relative;
+    margin-left: 0.15rem;
+}
+.content1 .rightBox .times{
+    height: 0.66rem;
+    border-bottom: 1px dashed #e7e7e7;
+    margin: 0 0.17rem;
+    margin-right:0.1rem;
+}
+.content1 .rightBox .times ul li{
+    width: 1.18rem;
+    height:0.45rem;
+    color: #000;
+    padding: 0.18rem 0 0.03rem;
+    cursor: pointer;
+    float: left;
+}
+.content1 .rightBox .times ul li p{
+    font-size: 0.14rem;
+    font-weight: 700;
+    color: #999;
+}
+.content1 .rightBox .timesWrap a:first-of-type{
+    width: 0.2rem;
+    height: 0.3rem;
+    background-position: -0.67rem  -0.23rem;
+    position: absolute;
+    top: 0.22rem;
+    left: 0.22rem;
+    z-index: 100;
+    background: url(../img/index-ico.png) no-repeat;
+    display: inline-block;
+}
+.content1 .rightBox .timesWrap a:nth-of-type(2){
+    width: 0.2rem;
+    height: 0.3rem;
+    background-position: -57px  -16px;
+    position: absolute;
+    top: 0.22rem;
+    right: 0.20rem;
+    z-index: 100;
+    background: url(../img/index-ico.png) no-repeat;
+    display: inline-block;
+    border:1px solid black
+}
+.discountGoodsDis{
+    height:3.64rem;
+}
+.discountGoodsDis>ul>li{
+    width: 2.11rem;
+    float: left;
+    position: relative;
+}
+.discountGoodsDis>ul>li:first-of-type .redicon{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.14rem;
+    float: left;
+    margin-top: 0.05rem;
+    margin-left: 0.12rem;
+    box-sizing: border-box;
+    padding-top: 0.29rem;
+    text-align: center;
+    height:0.55rem;
+    width: 0.55rem;
+    background: url(../img/cut1.png)center no-repeat;
+    background-size: 100%;
+}
+.discountGoodsDis>ul>li:first-of-type .finished{
+    background: url(../img/daysur_over.png) center no-repeat;
+    background-size: 100%;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: -0.6rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea{
+    margin: 0.18rem 0.20rem 0.20rem;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .picWrap{
+
+    width: 1.55rem;
+    height:1.54rem;
+    width: 100%;
+    height: 100%;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .picWrap img{
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .goodsDescription{
+    height: 0.3rem;
+    margin-top: 0.11rem;
+    font-size: 0.12rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .price{
+    color: #dd2727;
+    margin-top: 0.05rem;
+    position: relative;
+    font-size: 0.12rem;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .price span:nth-of-type(1){
+    font-size: 0.2rem;
+    color: #dd2727;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .price span:nth-of-type(2){
+    font-size: 0.12rem;
+    color: #dd2727;
+    text-decoration: line-through;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .blank{
+    height:0.29rem;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .finishedButton{
+    margin-top:0.1rem;
+    text-align: center;
+}
+.discountGoodsDis>ul>li:first-of-type .contentArea .finishedButton a:nth-of-type(2){
+    color: #fff;
+    background: #cdcdcd;
+    width: 1.2rem;
+    height: 0.30rem;
+    line-height: 0.30rem;
+    border-radius: 0.30rem;
+    cursor: pointer;
+    font-size: 0.14rem;
+    text-align: center;
+    display: inline-block
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .redicon{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.14rem;
+    float: left;
+    margin-top: 0.05rem;
+    margin-left: 0.12rem;
+    box-sizing: border-box;
+    padding-top: 0.29rem;
+    text-align: center;
+    height:0.55rem;
+    width: 0.55rem;
+    background: url(../img/cut1.png)center no-repeat;
+    background-size: 100%;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .finished{
+    background: url(../img/daysur_over.png) center no-repeat;
+    background-size: 100%;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: -0.6rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea{
+    margin: 0.18rem 0.20rem 0.20rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .picWrap{
+
+    width: 1.55rem;
+    height:1.54rem;
+    width: 100%;
+    height: 100%;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .picWrap img{
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .goodsDescription{
+    height: 0.3rem;
+    margin-top: 0.11rem;
+    font-size: 0.12rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .price{
+    color: #dd2727;
+    margin-top: 0.05rem;
+    position: relative;
+    font-size: 0.12rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .price span:nth-of-type(1){
+    font-size: 0.2rem;
+    color: #dd2727;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .price span:nth-of-type(2){
+    font-size: 0.12rem;
+    color: #dd2727;
+    text-decoration: line-through;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .blank{
+    height:0.29rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .finishedButton{
+    margin-top:0.1rem;
+    text-align: center;
+}
+.discountGoodsDis>ul>li:nth-of-type(2) .contentArea .finishedButton a:nth-of-type(2){
+    color: #fff;
+    background: #cdcdcd;
+    width: 1.2rem;
+    height: 0.30rem;
+    line-height: 0.30rem;
+    border-radius: 0.30rem;
+    cursor: pointer;
+    font-size: 0.14rem;
+    text-align: center;
+    display: inline-block
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .redicon{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.14rem;
+    float: left;
+    margin-top: 0.05rem;
+    margin-left: 0.12rem;
+    box-sizing: border-box;
+    padding-top: 0.29rem;
+    text-align: center;
+    height:0.55rem;
+    width: 0.55rem;
+    background: url(../img/fqls.png)center no-repeat;
+    background-size: 100%;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .redicon span{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.14rem;
+    text-align: center;
+
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .finished{
+    background: url(../img/daysur_over.png) center no-repeat;
+    background-size: 100%;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: -0.6rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea{
+    margin: 0.18rem 0.20rem 0.20rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .picWrap{
+
+    width: 1.55rem;
+    height:1.54rem;
+    width: 100%;
+    height: 100%;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .picWrap img{
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .goodsDescription{
+    height: 0.3rem;
+    margin-top: 0.11rem;
+    font-size: 0.12rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .price{
+    color: #dd2727;
+    margin-top: 0.05rem;
+    position: relative;
+    font-size: 0.12rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .price span:nth-of-type(1){
+    font-size: 0.2rem;
+    color: #dd2727;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .price span:nth-of-type(2){
+    font-size: 0.12rem;
+    color: #dd2727;
+    text-decoration: line-through;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .blank{
+    height:0.29rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .finishedButton{
+    margin-top:0.1rem;
+    text-align: center;
+}
+.discountGoodsDis>ul>li:nth-of-type(3) .contentArea .finishedButton a:nth-of-type(2){
+    color: #fff;
+    background: #cdcdcd;
+    width: 1.2rem;
+    height: 0.30rem;
+    line-height: 0.30rem;
+    border-radius: 0.30rem;
+    cursor: pointer;
+    font-size: 0.14rem;
+    text-align: center;
+    display: inline-block
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .redicon{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.14rem;
+    float: left;
+    margin-top: 0.05rem;
+    margin-left: 0.12rem;
+    box-sizing: border-box;
+    padding-top: 0.29rem;
+    text-align: center;
+    height:0.55rem;
+    width: 0.55rem;
+    background: url(../img/fqls.png)center no-repeat;
+    background-size: 100%;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .redicon span{
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.14rem;
+    text-align: center;
+
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .finished{
+    background: url(../img/daysur_over.png) center no-repeat;
+    background-size: 100%;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin: -0.6rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea{
+    margin: 0.18rem 0.20rem 0.20rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .picWrap{
+
+    width: 1.55rem;
+    height:1.54rem;
+    width: 100%;
+    height: 100%;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .picWrap img{
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .goodsDescription{
+    height: 0.3rem;
+    margin-top: 0.11rem;
+    font-size: 0.12rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .price{
+    color: #dd2727;
+    margin-top: 0.05rem;
+    position: relative;
+    font-size: 0.12rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .price span:nth-of-type(1){
+    font-size: 0.2rem;
+    color: #dd2727;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .price span:nth-of-type(2){
+    font-size: 0.12rem;
+    color: #dd2727;
+    text-decoration: line-through;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .blank{
+    height:0.29rem;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .finishedButton{
+    margin-top:0.1rem;
+    text-align: center;
+}
+.discountGoodsDis>ul>li:nth-of-type(4) .contentArea .finishedButton a:nth-of-type(2){
+    color: #fff;
+    background: #cdcdcd;
+    width: 1.2rem;
+    height: 0.30rem;
+    line-height: 0.30rem;
+    border-radius: 0.30rem;
+    cursor: pointer;
+    font-size: 0.14rem;
+    text-align: center;
+    display: inline-block
+}
+.content2{
+    margin-top:0.3rem;
+}
+.content2 .title{
+    margin-bottom:0.1rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.content2 .title i{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/cate_721.png) no-repeat;
+    margin-right:0.05rem;
+    float: left;
+    display: inline-block;
+}
+.content2 .content .hot{
+    width: 3.28rem;
+    height: 4.77rem;
+    overflow:hidden;
+    position: relative;
+    float: left;
+
+}
+.content2 .content .hot .keyWord{
+    background: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8ffffff, endColorstr=#c8ffffff);
+    width: 2.98rem;
+    height: 1.48rem;
+    left: 0;
+    bottom: 0;
+    padding: 0.15rem ;
+
+    position: absolute;
+
+}
+.content2 .content .hot  a img{
+    width:100%;
+    height:100%;
+}
+.content2 .content .hot .keyWord .top{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    color:#666666;
+
+
+}
+.content2 .content .hot .keyWord .top span{
+    width: 0.87rem;
+    overflow: hidden;
+    float: left;
+}
+.content2 .content .hot .keyWord .top b{
+    margin-right: 0.15rem;
+    margin-left:0.05rem;
+    margin-top:0.05rem;
+    float: left;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+.content2 .content .hot .keyWord .top i{
+    background: url(../img/index-ico.png) no-repeat;
+    margin-left: 0.1rem;
+    display: inline-block;
+    float: left;
+    width: 0.27rem;
+    height:0.27rem;
+    background-position: -1.11rem -1.68rem;
+}
+.content2 .content .hot .keyWord ul{
+    width:3.15rem;
+    height:1.1rem;
+    margin-top: 0.1rem;
+    overflow: hidden;
+
+}
+.content2 .content .hot .keyWord ul li{
+    width:1.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    margin-top:0.1rem;
+    float: left;
+    text-align: center;
+}
+.content2 .content .hot .keyWord ul li a{
+    border-radius: 0.3rem;
+    margin-right: 0.18rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: #444;
+    line-height:0.24rem;
+    display: block;
+}
+.content2 .content .normal{
+    border-top: 0.01rem solid #e74085;
+    width:8.72rem;
+    position: relative;
+    float: left;
+}
+.content2 .content .normal .selector {
+    border-right:0.01rem solid #e7e7e7;
+    top:-0.35rem;
+    right:0;
+    width:8.72rem;
+    height:0.35rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: right;
+}
+.content2 .content .normal .selector ul{
+    border-left: 0.01rem solid #e7e7e7;
+    margin-right: 0;
+    display: inline-block;
+}
+.content2 .content .normal .selector ul li{
+    border-bottom: 0.01rem solid #e74085;
+    border-left: #fff;
+    border-right: 0.01rem solid #fff;
+    height: 0.33rem;
+    border-top: 0.01rem solid #e7e7e7;
+    float: left;
+    background: #fff;
+}
+.content2 .content .normal .selector ul li:last-child{
+    border-top: 0.01rem  solid #e74085;
+    border-left: 0.01rem  solid #e74085;
+    border-right: 0.01rem  solid #e74085;
+   /* margin-left: 0.02rem;*/
+    border-bottom: 0.01rem solid #fff;
+}
+.content2 .content .normal .selector ul li a{
+
+}
+.content2 .content .normal .selector ul li a{
+    border-top: 0.02rem solid #fff;
+    padding-top:0.05rem;
+    display: inline-block;
+}
+.content2 .content .normal .selector ul li a span{
+    padding: 0 0.15rem;
+    border-right: 0.01rem solid #e7e7e7;
+    font-size: 0.14rem;
+    display: inline-block;
+
+}
+.content2 .content .normal .selector ul li:last-child a {
+    border-top: 2px solid #e74085;
+    padding-top: 5px;
+}
+.content2 .content .normal .selector ul li:last-child a span{
+    border-right:none;
+}
+.content2 .content .normal .selector ul li:nth-of-type(3) a span{
+    border-right:none;
+}
+.content2 .goodsDisplay ul li{
+    border-bottom: 0.01rem solid #e7e7e7;
+    border-right: 0.01rem solid #e7e7e7;
+    width: 1.97rem;
+    padding:0.1rem;
+    height: 2.17rem;
+    float: left;
+}
+.content2 .goodsDisplay ul li a div:nth-of-type(1){
+    width: 2rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+   /* float: left;*/
+}
+.content2 .goodsDisplay ul li a div:nth-of-type(1) img{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-top: 0.05rem;
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.content2 .goodsDisplay ul li a{
+   /* display: inline-block;*/
+}
+.content2 .goodsDisplay ul li h1{
+    height:0.32rem;
+    overflow: hidden;
+    color: #666;
+    font-weight: 400;
+}
+.content2 .goodsDisplay ul li a div:nth-of-type(2){
+    color:red;
+    font-size: 0.16rem;
+    margin-top:0.05rem;
+}
+.content2  .brand {
+    border-right:0.01rem solid #e7e7e7;
+    border-bottom:0.01rem solid #e7e7e7;
+}
+.content2 .brand li{
+    width: 1.48rem;
+    height: 0.66rem;
+    border-left: 0.01rem solid #e7e7e7;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.content2 .brand li a img{
+    width:1rem;
+    height:0.48rem;
+    margin-top:0.08rem;
+    border:0;
+}
+/*content3..............................................................................*/
+.content3{
+    margin-top:0.3rem;
+}
+.content3 .title{
+    margin-bottom:0.1rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.content3 .title i{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/cate_721.png) no-repeat;
+    margin-right:0.05rem;
+    float: left;
+    display: inline-block;
+}
+.content3 .content .hot{
+    width: 3.28rem;
+    height: 4.77rem;
+    overflow:hidden;
+    position: relative;
+    float: left;
+
+}
+.content3 .content .hot .keyWord{
+    background: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8ffffff, endColorstr=#c8ffffff);
+    width: 2.98rem;
+    height: 1.48rem;
+    left: 0;
+    bottom: 0;
+    padding: 0.15rem ;
+
+    position: absolute;
+
+}
+.content3 .content .hot  a img{
+    width:100%;
+    height:100%;
+}
+.content3 .content .hot .keyWord .top{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    color:#666666;
+
+
+}
+.content3 .content .hot .keyWord .top span{
+    width: 0.87rem;
+    overflow: hidden;
+    float: left;
+}
+.content3 .content .hot .keyWord .top b{
+    margin-right: 0.15rem;
+    margin-left:0.05rem;
+    margin-top:0.05rem;
+    float: left;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+.content3 .content .hot .keyWord .top i{
+    background: url(../img/index-ico.png) no-repeat;
+    margin-left: 0.1rem;
+    display: inline-block;
+    float: left;
+    width: 0.27rem;
+    height:0.27rem;
+    background-position: -1.11rem -1.68rem;
+}
+.content3 .content .hot .keyWord ul{
+    width:3.15rem;
+    height:1.1rem;
+    margin-top: 0.1rem;
+    overflow: hidden;
+
+}
+.content3 .content .hot .keyWord ul li{
+    width:1.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    margin-top:0.1rem;
+    float: left;
+    text-align: center;
+}
+.content3 .content .hot .keyWord ul li a{
+    border-radius: 0.3rem;
+    margin-right: 0.18rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: #444;
+    line-height:0.24rem;
+    display: block;
+}
+.content3 .content .normal{
+    border-top: 0.01rem solid #e74085;
+    width:8.72rem;
+    position: relative;
+    float: left;
+}
+.content3 .content .normal .selector {
+    border-right:0.01rem solid #e7e7e7;
+    top:-0.35rem;
+    right:0;
+    width:8.72rem;
+    height:0.35rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: right;
+}
+.content3 .content .normal .selector ul{
+    border-left: 0.01rem solid #e7e7e7;
+    margin-right: 0;
+    display: inline-block;
+}
+.content3 .content .normal .selector ul li{
+    border-bottom: 0.01rem solid #e74085;
+    border-left: #fff;
+    border-right: 0.01rem solid #fff;
+    height: 0.33rem;
+    border-top: 0.01rem solid #e7e7e7;
+    float: left;
+    background: #fff;
+}
+.content3 .content .normal .selector ul li:last-child{
+    border-top: 0.01rem  solid #e74085;
+    border-left: 0.01rem  solid #e74085;
+    border-right: 0.01rem  solid #e74085;
+    /* margin-left: 0.02rem;*/
+    border-bottom: 0.01rem solid #fff;
+}
+.content3 .content .normal .selector ul li a{
+
+}
+.content3 .content .normal .selector ul li a{
+    border-top: 0.02rem solid #fff;
+    padding-top:0.05rem;
+    display: inline-block;
+}
+.content3 .content .normal .selector ul li a span{
+    padding: 0 0.15rem;
+    border-right: 0.01rem solid #e7e7e7;
+    font-size: 0.14rem;
+    display: inline-block;
+
+}
+.content3 .content .normal .selector ul li:last-child a {
+    border-top: 2px solid #e74085;
+    padding-top: 5px;
+}
+.content3 .content .normal .selector ul li:last-child a span{
+    border-right:none;
+}
+.content3 .content .normal .selector ul li:nth-of-type(3) a span{
+    border-right:none;
+}
+.content3 .goodsDisplay ul li{
+    border-bottom: 0.01rem solid #e7e7e7;
+    border-right: 0.01rem solid #e7e7e7;
+    width: 1.97rem;
+    padding:0.1rem;
+    height: 2.17rem;
+    float: left;
+}
+.content3 .goodsDisplay ul li a div:nth-of-type(1){
+    width: 2rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+    /* float: left;*/
+}
+.content3 .goodsDisplay ul li a div:nth-of-type(1) img{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-top: 0.05rem;
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.content3 .goodsDisplay ul li a{
+    /* display: inline-block;*/
+}
+.content3 .goodsDisplay ul li h1{
+    height:0.32rem;
+    overflow: hidden;
+    color: #666;
+    font-weight: 400;
+}
+.content3 .goodsDisplay ul li a div:nth-of-type(2){
+    color:red;
+    font-size: 0.16rem;
+    margin-top:0.05rem;
+}
+.content3  .brand {
+    border-right:0.01rem solid #e7e7e7;
+    border-bottom:0.01rem solid #e7e7e7;
+}
+.content3 .brand li{
+    width: 1.48rem;
+    height: 0.66rem;
+    border-left: 0.01rem solid #e7e7e7;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.content3 .brand li a img{
+    width:1rem;
+    height:0.48rem;
+    margin-top:0.08rem;
+    border:0;
+}
+/*content4..............................................................................*/
+.content4{
+    margin-top:0.3rem;
+}
+.content4 .title{
+    margin-bottom:0.1rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.content4 .title i{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/cate_721.png) no-repeat;
+    margin-right:0.05rem;
+    float: left;
+    display: inline-block;
+}
+.content4 .content .hot{
+    width: 3.28rem;
+    height: 4.77rem;
+    overflow:hidden;
+    position: relative;
+    float: left;
+
+}
+.content4 .content .hot .keyWord{
+    background: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8ffffff, endColorstr=#c8ffffff);
+    width: 2.98rem;
+    height: 1.48rem;
+    left: 0;
+    bottom: 0;
+    padding: 0.15rem ;
+
+    position: absolute;
+
+}
+.content4 .content .hot  a img{
+    width:100%;
+    height:100%;
+}
+.content4 .content .hot .keyWord .top{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    color:#666666;
+
+
+}
+.content4 .content .hot .keyWord .top span{
+    width: 0.87rem;
+    overflow: hidden;
+    float: left;
+}
+.content4 .content .hot .keyWord .top b{
+    margin-right: 0.15rem;
+    margin-left:0.05rem;
+    margin-top:0.05rem;
+    float: left;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+.content4 .content .hot .keyWord .top i{
+    background: url(../img/index-ico.png) no-repeat;
+    margin-left: 0.1rem;
+    display: inline-block;
+    float: left;
+    width: 0.27rem;
+    height:0.27rem;
+    background-position: -1.11rem -1.68rem;
+}
+.content4 .content .hot .keyWord ul{
+    width:3.15rem;
+    height:1.1rem;
+    margin-top: 0.1rem;
+    overflow: hidden;
+
+}
+.content4 .content .hot .keyWord ul li{
+    width:1.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    margin-top:0.1rem;
+    float: left;
+    text-align: center;
+}
+.content4 .content .hot .keyWord ul li a{
+    border-radius: 0.3rem;
+    margin-right: 0.18rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: #444;
+    line-height:0.24rem;
+    display: block;
+}
+.content4 .content .normal{
+    border-top: 0.01rem solid #e74085;
+    width:8.72rem;
+    position: relative;
+    float: left;
+}
+.content4 .content .normal .selector {
+    border-right:0.01rem solid #e7e7e7;
+    top:-0.35rem;
+    right:0;
+    width:8.72rem;
+    height:0.35rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: right;
+}
+.content4 .content .normal .selector ul{
+    border-left: 0.01rem solid #e7e7e7;
+    margin-right: 0;
+    display: inline-block;
+}
+.content4 .content .normal .selector ul li{
+    border-bottom: 0.01rem solid #e74085;
+    border-left: #fff;
+    border-right: 0.01rem solid #fff;
+    height: 0.33rem;
+    border-top: 0.01rem solid #e7e7e7;
+    float: left;
+    background: #fff;
+}
+.content4 .content .normal .selector ul li:last-child{
+    border-top: 0.01rem  solid #e74085;
+    border-left: 0.01rem  solid #e74085;
+    border-right: 0.01rem  solid #e74085;
+    /* margin-left: 0.02rem;*/
+    border-bottom: 0.01rem solid #fff;
+}
+.content4 .content .normal .selector ul li a{
+
+}
+.content4 .content .normal .selector ul li a{
+    border-top: 0.02rem solid #fff;
+    padding-top:0.05rem;
+    display: inline-block;
+}
+.content4 .content .normal .selector ul li a span{
+    padding: 0 0.15rem;
+    border-right: 0.01rem solid #e7e7e7;
+    font-size: 0.14rem;
+    display: inline-block;
+
+}
+.content4 .content .normal .selector ul li:last-child a {
+    border-top: 2px solid #e74085;
+    padding-top: 5px;
+}
+.content4 .content .normal .selector ul li:last-child a span{
+    border-right:none;
+}
+.content4 .content .normal .selector ul li:nth-of-type(3) a span{
+    border-right:none;
+}
+.content4 .goodsDisplay ul li{
+    border-bottom: 0.01rem solid #e7e7e7;
+    border-right: 0.01rem solid #e7e7e7;
+    width: 1.97rem;
+    padding:0.1rem;
+    height: 2.17rem;
+    float: left;
+}
+.content4 .goodsDisplay ul li a div:nth-of-type(1){
+    width: 2rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+    /* float: left;*/
+}
+.content4 .goodsDisplay ul li a div:nth-of-type(1) img{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-top: 0.05rem;
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.content4 .goodsDisplay ul li a{
+    /* display: inline-block;*/
+}
+.content4 .goodsDisplay ul li h1{
+    height:0.32rem;
+    overflow: hidden;
+    color: #666;
+    font-weight: 400;
+}
+.content4 .goodsDisplay ul li a div:nth-of-type(2){
+    color:red;
+    font-size: 0.16rem;
+    margin-top:0.05rem;
+}
+.content4  .brand {
+    border-right:0.01rem solid #e7e7e7;
+    border-bottom:0.01rem solid #e7e7e7;
+}
+.content4 .brand li{
+    width: 1.48rem;
+    height: 0.66rem;
+    border-left: 0.01rem solid #e7e7e7;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.content4 .brand li a img{
+    width:1rem;
+    height:0.48rem;
+    margin-top:0.08rem;
+    border:0;
+}
+/*content5..............................................................................*/
+.content5{
+    margin-top:0.3rem;
+}
+.content5 .title{
+    margin-bottom:0.1rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.content5 .title i{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/cate_721.png) no-repeat;
+    margin-right:0.05rem;
+    float: left;
+    display: inline-block;
+}
+.content5 .content .hot{
+    width: 3.28rem;
+    height: 4.77rem;
+    overflow:hidden;
+    position: relative;
+    float: left;
+
+}
+.content5 .content .hot .keyWord{
+    background: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8ffffff, endColorstr=#c8ffffff);
+    width: 2.98rem;
+    height: 1.48rem;
+    left: 0;
+    bottom: 0;
+    padding: 0.15rem ;
+
+    position: absolute;
+
+}
+.content5 .content .hot  a img{
+    width:100%;
+    height:100%;
+}
+.content5 .content .hot .keyWord .top{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    color:#666666;
+
+
+}
+.content5 .content .hot .keyWord .top span{
+    width: 0.87rem;
+    overflow: hidden;
+    float: left;
+}
+.content5 .content .hot .keyWord .top b{
+    margin-right: 0.15rem;
+    margin-left:0.05rem;
+    margin-top:0.05rem;
+    float: left;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+.content5 .content .hot .keyWord .top i{
+    background: url(../img/index-ico.png) no-repeat;
+    margin-left: 0.1rem;
+    display: inline-block;
+    float: left;
+    width: 0.27rem;
+    height:0.27rem;
+    background-position: -1.11rem -1.68rem;
+}
+.content5 .content .hot .keyWord ul{
+    width:3.15rem;
+    height:1.1rem;
+    margin-top: 0.1rem;
+    overflow: hidden;
+
+}
+.content5 .content .hot .keyWord ul li{
+    width:1.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    margin-top:0.1rem;
+    float: left;
+    text-align: center;
+}
+.content5 .content .hot .keyWord ul li a{
+    border-radius: 0.3rem;
+    margin-right: 0.18rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: #444;
+    line-height:0.24rem;
+    display: block;
+}
+.content5 .content .normal{
+    border-top: 0.01rem solid #e74085;
+    width:8.72rem;
+    position: relative;
+    float: left;
+}
+.content5 .content .normal .selector {
+    border-right:0.01rem solid #e7e7e7;
+    top:-0.35rem;
+    right:0;
+    width:8.72rem;
+    height:0.35rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: right;
+}
+.content5 .content .normal .selector ul{
+    border-left: 0.01rem solid #e7e7e7;
+    margin-right: 0;
+    display: inline-block;
+}
+.content5 .content .normal .selector ul li{
+    border-bottom: 0.01rem solid #e74085;
+    border-left: #fff;
+    border-right: 0.01rem solid #fff;
+    height: 0.33rem;
+    border-top: 0.01rem solid #e7e7e7;
+    float: left;
+    background: #fff;
+}
+.content5 .content .normal .selector ul li:last-child{
+    border-top: 0.01rem  solid #e74085;
+    border-left: 0.01rem  solid #e74085;
+    border-right: 0.01rem  solid #e74085;
+    /* margin-left: 0.02rem;*/
+    border-bottom: 0.01rem solid #fff;
+}
+.content5 .content .normal .selector ul li a{
+
+}
+.content5 .content .normal .selector ul li a{
+    border-top: 0.02rem solid #fff;
+    padding-top:0.05rem;
+    display: inline-block;
+}
+.content5 .content .normal .selector ul li a span{
+    padding: 0 0.15rem;
+    border-right: 0.01rem solid #e7e7e7;
+    font-size: 0.14rem;
+    display: inline-block;
+
+}
+.content5 .content .normal .selector ul li:last-child a {
+    border-top: 2px solid #e74085;
+    padding-top: 5px;
+}
+.content5 .content .normal .selector ul li:last-child a span{
+    border-right:none;
+}
+.content5 .content .normal .selector ul li:nth-of-type(3) a span{
+    border-right:none;
+}
+.content5 .goodsDisplay ul li{
+    border-bottom: 0.01rem solid #e7e7e7;
+    border-right: 0.01rem solid #e7e7e7;
+    width: 1.97rem;
+    padding:0.1rem;
+    height: 2.17rem;
+    float: left;
+}
+.content5 .goodsDisplay ul li a div:nth-of-type(1){
+    width: 2rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+    /* float: left;*/
+}
+.content5 .goodsDisplay ul li a div:nth-of-type(1) img{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-top: 0.05rem;
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.content5 .goodsDisplay ul li a{
+    /* display: inline-block;*/
+}
+.content5 .goodsDisplay ul li h1{
+    height:0.32rem;
+    overflow: hidden;
+    color: #666;
+    font-weight: 400;
+}
+.content5 .goodsDisplay ul li a div:nth-of-type(2){
+    color:red;
+    font-size: 0.16rem;
+    margin-top:0.05rem;
+}
+.content5  .brand {
+    border-right:0.01rem solid #e7e7e7;
+    border-bottom:0.01rem solid #e7e7e7;
+}
+.content5 .brand li{
+    width: 1.48rem;
+    height: 0.66rem;
+    border-left: 0.01rem solid #e7e7e7;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.content5 .brand li a img{
+    width:1rem;
+    height:0.48rem;
+    margin-top:0.08rem;
+    border:0;
+}
+/*content6..............................................................................*/
+.content6{
+    margin-top:0.3rem;
+}
+.content6 .title{
+    margin-bottom:0.1rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.content6 .title i{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/cate_721.png) no-repeat;
+    margin-right:0.05rem;
+    float: left;
+    display: inline-block;
+}
+.content6 .content .hot{
+    width: 3.28rem;
+    height: 4.77rem;
+    overflow:hidden;
+    position: relative;
+    float: left;
+
+}
+.content6 .content .hot .keyWord{
+    background: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8ffffff, endColorstr=#c8ffffff);
+    width: 2.98rem;
+    height: 1.48rem;
+    left: 0;
+    bottom: 0;
+    padding: 0.15rem ;
+
+    position: absolute;
+
+}
+.content6 .content .hot  a img{
+    width:100%;
+    height:100%;
+}
+.content6 .content .hot .keyWord .top{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    color:#666666;
+
+
+}
+.content6 .content .hot .keyWord .top span{
+    width: 0.87rem;
+    overflow: hidden;
+    float: left;
+}
+.content6 .content .hot .keyWord .top b{
+    margin-right: 0.15rem;
+    margin-left:0.05rem;
+    margin-top:0.05rem;
+    float: left;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+.content6 .content .hot .keyWord .top i{
+    background: url(../img/index-ico.png) no-repeat;
+    margin-left: 0.1rem;
+    display: inline-block;
+    float: left;
+    width: 0.27rem;
+    height:0.27rem;
+    background-position: -1.11rem -1.68rem;
+}
+.content6 .content .hot .keyWord ul{
+    width:3.15rem;
+    height:1.1rem;
+    margin-top: 0.1rem;
+    overflow: hidden;
+
+}
+.content6 .content .hot .keyWord ul li{
+    width:1.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    margin-top:0.1rem;
+    float: left;
+    text-align: center;
+}
+.content6 .content .hot .keyWord ul li a{
+    border-radius: 0.3rem;
+    margin-right: 0.18rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: #444;
+    line-height:0.24rem;
+    display: block;
+}
+.content6 .content .normal{
+    border-top: 0.01rem solid #e74085;
+    width:8.72rem;
+    position: relative;
+    float: left;
+}
+.content6 .content .normal .selector {
+    border-right:0.01rem solid #e7e7e7;
+    top:-0.35rem;
+    right:0;
+    width:8.72rem;
+    height:0.35rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: right;
+}
+.content6 .content .normal .selector ul{
+    border-left: 0.01rem solid #e7e7e7;
+    margin-right: 0;
+    display: inline-block;
+}
+.content6 .content .normal .selector ul li{
+    border-bottom: 0.01rem solid #e74085;
+    border-left: #fff;
+    border-right: 0.01rem solid #fff;
+    height: 0.33rem;
+    border-top: 0.01rem solid #e7e7e7;
+    float: left;
+    background: #fff;
+}
+.content6 .content .normal .selector ul li:last-child{
+    border-top: 0.01rem  solid #e74085;
+    border-left: 0.01rem  solid #e74085;
+    border-right: 0.01rem  solid #e74085;
+    /* margin-left: 0.02rem;*/
+    border-bottom: 0.01rem solid #fff;
+}
+.content6 .content .normal .selector ul li a{
+
+}
+.content6 .content .normal .selector ul li a{
+    border-top: 0.02rem solid #fff;
+    padding-top:0.05rem;
+    display: inline-block;
+}
+.content6 .content .normal .selector ul li a span{
+    padding: 0 0.15rem;
+    border-right: 0.01rem solid #e7e7e7;
+    font-size: 0.14rem;
+    display: inline-block;
+
+}
+.content6 .content .normal .selector ul li:last-child a {
+    border-top: 2px solid #e74085;
+    padding-top: 5px;
+}
+.content6 .content .normal .selector ul li:last-child a span{
+    border-right:none;
+}
+.content6 .content .normal .selector ul li:nth-of-type(3) a span{
+    border-right:none;
+}
+.content6 .goodsDisplay ul li{
+    border-bottom: 0.01rem solid #e7e7e7;
+    border-right: 0.01rem solid #e7e7e7;
+    width: 1.97rem;
+    padding:0.1rem;
+    height: 2.17rem;
+    float: left;
+}
+.content6 .goodsDisplay ul li a div:nth-of-type(1){
+    width: 2rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+    /* float: left;*/
+}
+.content6 .goodsDisplay ul li a div:nth-of-type(1) img{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-top: 0.05rem;
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.content6 .goodsDisplay ul li a{
+    /* display: inline-block;*/
+}
+.content6 .goodsDisplay ul li h1{
+    height:0.32rem;
+    overflow: hidden;
+    color: #666;
+    font-weight: 400;
+}
+.content6 .goodsDisplay ul li a div:nth-of-type(2){
+    color:red;
+    font-size: 0.16rem;
+    margin-top:0.05rem;
+}
+.content6  .brand {
+    border-right:0.01rem solid #e7e7e7;
+    border-bottom:0.01rem solid #e7e7e7;
+}
+.content6 .brand li{
+    width: 1.48rem;
+    height: 0.66rem;
+    border-left: 0.01rem solid #e7e7e7;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.content6 .brand li a img{
+    width:1rem;
+    height:0.48rem;
+    margin-top:0.08rem;
+    border:0;
+}
+
+/*content7..............................................................................*/
+.content7{
+    margin-top:0.3rem;
+}
+.content7 .title{
+    margin-bottom:0.1rem;
+    font-size: 0.2rem;
+    color: #333;
+}
+.content7 .title i{
+    width: 0.3rem;
+    height: 0.3rem;
+    background: url(../img/cate_721.png) no-repeat;
+    margin-right:0.05rem;
+    float: left;
+    display: inline-block;
+}
+.content7 .content .hot{
+    width: 3.28rem;
+    height: 4.77rem;
+    overflow:hidden;
+    position: relative;
+    float: left;
+
+}
+.content7 .content .hot .keyWord{
+    background: rgba(255,255,255,.8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8ffffff, endColorstr=#c8ffffff);
+    width: 2.98rem;
+    height: 1.48rem;
+    left: 0;
+    bottom: 0;
+    padding: 0.15rem ;
+
+    position: absolute;
+
+}
+.content7 .content .hot  a img{
+    width:100%;
+    height:100%;
+}
+.content7 .content .hot .keyWord .top{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    color:#666666;
+
+
+}
+.content7 .content .hot .keyWord .top span{
+    width: 0.87rem;
+    overflow: hidden;
+    float: left;
+}
+.content7 .content .hot .keyWord .top b{
+    margin-right: 0.15rem;
+    margin-left:0.05rem;
+    margin-top:0.05rem;
+    float: left;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 0.2rem;
+}
+.content7 .content .hot .keyWord .top i{
+    background: url(../img/index-ico.png) no-repeat;
+    margin-left: 0.1rem;
+    display: inline-block;
+    float: left;
+    width: 0.27rem;
+    height:0.27rem;
+    background-position: -1.11rem -1.68rem;
+}
+.content7 .content .hot .keyWord ul{
+    width:3.15rem;
+    height:1.1rem;
+    margin-top: 0.1rem;
+    overflow: hidden;
+
+}
+.content7 .content .hot .keyWord ul li{
+    width:1.05rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    margin-top:0.1rem;
+    float: left;
+    text-align: center;
+}
+.content7 .content .hot .keyWord ul li a{
+    border-radius: 0.3rem;
+    margin-right: 0.18rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 0.05rem;
+    overflow: hidden;
+    background: #fff;
+    text-decoration: none;
+    color: #444;
+    line-height:0.24rem;
+    display: block;
+}
+.content7 .content .normal{
+    border-top: 0.01rem solid #e74085;
+    width:8.72rem;
+    position: relative;
+    float: left;
+}
+.content7 .content .normal .selector {
+    border-right:0.01rem solid #e7e7e7;
+    top:-0.35rem;
+    right:0;
+    width:8.72rem;
+    height:0.35rem;
+    overflow: hidden;
+    position: absolute;
+    text-align: right;
+}
+.content7 .content .normal .selector ul{
+    border-left: 0.01rem solid #e7e7e7;
+    margin-right: 0;
+    display: inline-block;
+}
+.content7 .content .normal .selector ul li{
+    border-bottom: 0.01rem solid #e74085;
+    border-left: #fff;
+    border-right: 0.01rem solid #fff;
+    height: 0.33rem;
+    border-top: 0.01rem solid #e7e7e7;
+    float: left;
+    background: #fff;
+}
+.content7 .content .normal .selector ul li:last-child{
+    border-top: 0.01rem  solid #e74085;
+    border-left: 0.01rem  solid #e74085;
+    border-right: 0.01rem  solid #e74085;
+    /* margin-left: 0.02rem;*/
+    border-bottom: 0.01rem solid #fff;
+}
+.content7 .content .normal .selector ul li a{
+
+}
+.content7 .content .normal .selector ul li a{
+    border-top: 0.02rem solid #fff;
+    padding-top:0.05rem;
+    display: inline-block;
+}
+.content7 .content .normal .selector ul li a span{
+    padding: 0 0.15rem;
+    border-right: 0.01rem solid #e7e7e7;
+    font-size: 0.14rem;
+    display: inline-block;
+
+}
+.content7 .content .normal .selector ul li:last-child a {
+    border-top: 2px solid #e74085;
+    padding-top: 5px;
+}
+.content7 .content .normal .selector ul li:last-child a span{
+    border-right:none;
+}
+.content7 .content .normal .selector ul li:nth-of-type(3) a span{
+    border-right:none;
+}
+.content7 .goodsDisplay ul li{
+    border-bottom: 0.01rem solid #e7e7e7;
+    border-right: 0.01rem solid #e7e7e7;
+    width: 1.97rem;
+    padding:0.1rem;
+    height: 2.17rem;
+    float: left;
+}
+.content7 .goodsDisplay ul li a div:nth-of-type(1){
+    width: 2rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+    /* float: left;*/
+}
+.content7 .goodsDisplay ul li a div:nth-of-type(1) img{
+    width: 1.36rem;
+    height: 1.36rem;
+    margin-top: 0.05rem;
+    transition: all .5s ease;
+    border: 1px solid #fff;
+}
+.content7 .goodsDisplay ul li a{
+    /* display: inline-block;*/
+}
+.content7 .goodsDisplay ul li h1{
+    height:0.32rem;
+    overflow: hidden;
+    color: #666;
+    font-weight: 400;
+}
+.content7 .goodsDisplay ul li a div:nth-of-type(2){
+    color:red;
+    font-size: 0.16rem;
+    margin-top:0.05rem;
+}
+.content7  .brand {
+    border-right:0.01rem solid #e7e7e7;
+    border-bottom:0.01rem solid #e7e7e7;
+}
+.content7 .brand li{
+    width: 1.48rem;
+    height: 0.66rem;
+    border-left: 0.01rem solid #e7e7e7;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.content7 .brand li a img{
+    width:1rem;
+    height:0.48rem;
+    margin-top:0.08rem;
+    border:0;
+}
+/*FOOTER*/
+.footer{
+    background: #f5f5f5;
+}
+.footer .footerTop{
+    border-bottom:0.01rem solid #e5e5e5;
+    height:1rem;
+}
+.footer .footerWrap{
+    margin:0 auto;
+    width:12rem;
+    padding-top:0.25rem;
+}
+.footer .footerTop .footerImage{
+    margin:0 auto;
+    width:12rem;
+}
+.footer .footerTop .footerImage ul{
+    width: 12rem;
+    margin: 0 auto;
+    padding: 0.19rem 0;
+}
+.footer .footerTop .footerImage ul li{
+    float: left;
+    width:2rem;
+}
+.footer .footerTop .footerImage ul li a{
+    display: block;
+    width: 1.28rem;
+    height:0.62rem;
+    padding-left: 0.72rem;
+    line-height: 0.62rem;
+    color: #444;
+    font-weight: 700;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    float: left;
+    font-size:0.18rem;
+}
+.footer .footerTop .footerImage ul li:nth-of-type(1)   a{
+    background: url(../img/logo.png) 0 0 no-repeat;
+}
+.footer .footerTop .footerImage ul li:nth-of-type(2) a{
+    background: url(../img/logo.png) 0 -0.78rem no-repeat;
+}
+.footer .footerTop .footerImage ul li:nth-of-type(3) a{
+    background: url(../img/logo.png) 0 -1.58rem no-repeat;
+}
+.footer .footerTop .footerImage ul li:nth-of-type(4) a{
+    background: url(../img/logo.png) 0 -2.35rem no-repeat;
+}
+.footer .footerTop .footerImage ul li:nth-of-type(5) a{
+    background: url(../img/logo.png) 0 -3.13rem no-repeat;
+}
+.footer .footerTop .footerImage ul li:nth-of-type(6) a{
+    background: url(../img/logo.png) 0 -3.93rem no-repeat;
+}
+.footer .footerWrap .info{
+    padding-bottom: 0.25rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+.footer .footerWrap .info .footerPhone{
+    float: left;
+}
+.footer .footerWrap .info .footerNumber{
+    float: left;
+    margin-left:0.3rem;
+}
+.footer .footerWrap .info .footerPhone img{
+    float: left;
+    margin-top:0.05rem;
+}
+.footer .footerWrap .info .footerPhone h2{
+    font-size: 0.14rem;
+    font-weight:700;
+    color:#666;
+}
+.footer .footerWrap .info .footerPhone p:first-of-type{
+    margin-top:0.15rem;
+    font-size:0.2rem;
+    color:#666;
+}
+.footer .footerWrap .info .footerPhone p:first-of-type span{
+    margin-top:0.05rem;
+    font-size:0.12rem;
+    color:#666;
+}
+.footer .footerWrap .info .footerPhone p:nth-of-type(2){
+    margin-top:0.15rem;
+    font-size:0.2rem;
+    color:#666;
+}
+.footer .footerWrap .info .footerPhone p:nth-of-type(3){
+    margin-top:0.15rem;
+    font-size:0.12rem;
+    color:#666;
+}
+.footer .footerWrap .info .pay {
+    margin-left:0.4rem;
+    margin-right: 0.85rem;
+    float: left;
+}
+.footer .footerWrap .info .pay h2{
+    font-size: 0.14rem;
+    font-weight:700;
+    color:#666;
+    margin-bottom:0.15rem;
+}
+.footer .footerWrap .info .pay p{
+    margin-top:0.05rem;
+    color:#444;
+    font-size:0.14rem;
+}
+.footer .footerWrap .info .sendWay {
+
+    margin-right: 0.85rem;
+    float: left;
+}
+.footer .footerWrap .info .sendWay h2{
+    font-size: 0.14rem;
+    font-weight:700;
+    color:#666;
+    margin-bottom:0.15rem;
+}
+.footer .footerWrap .info .sendWay p{
+    margin-top:0.05rem;
+    color:#444;
+    font-size:0.14rem;
+}
+.footer .footerWrap .info .guide {
+
+    margin-right: 0.85rem;
+    float: left;
+}
+.footer .footerWrap .info .guide h2{
+    font-size: 0.14rem;
+    font-weight:700;
+    color:#666;
+    margin-bottom:0.15rem;
+}
+.footer .footerWrap .info .guide p{
+    margin-top:0.05rem;
+    color:#444;
+    font-size:0.14rem;
+}
+.footer .footerWrap .info .aboutUs {
+    margin-right: 0.85rem;
+    float: left;
+}
+.footer .footerWrap .info .aboutUs h2{
+    font-size: 0.14rem;
+    font-weight:700;
+    color:#666;
+    margin-bottom:0.15rem;
+}
+.footer .footerWrap .info .aboutUs p{
+    margin-top:0.05rem;
+    color:#444;
+    font-size:0.14rem;
+}
+.footer .footerWrap .info .appQRcode{
+    margin-top:-0.05rem;
+    margin-right:0.36rem;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer .footerWrap .info .appQRcode img{
+    margin-top:0.1rem;
+}
+
+.footer .footerWrap .info .weChatQRcode{
+    margin-top:-0.05rem;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer .footerWrap .info .weChatQRcode img{
+    margin-top:0.1rem;
+}
+.footer .footerWrap .footerLink{
+    padding-top:0.2rem;
+}
+.footer .footerWrap .footerLink span{
+    display: inline-block;
+    color:#9999;
+}
+.footer .footerWrap .footerLink span:last-child{
+    margin-left:0.05rem;
+    color:#9999;
+}
+.footer .footerWrap .footerLink span:last-child a{
+
+    color:#9999;
+}
+.footer .footerWrap .support{
+    margin-top:0.2rem;
+    text-align: center;
+}
+.footer .footerWrap .support a{
+    margin-right:0.03rem;
+    display: inline-block;
+}
+.footer .footerWrap .footerCopyright{
+    padding:0.2rem 0 0.4rem;
+    color:#000;
+}
+.footer .footerWrap .footerCopyright p{
+    text-align: center;
+}
+.footer .footerWrap .footerCopyright p a{
+    color:#444;
 }
